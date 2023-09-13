@@ -1,0 +1,131 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: red;
+}
+
+select{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+input {
+    border-radius: 1rem;
+}
+
+.header {
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+.icon-image {
+    height: 2rem; /* Estilo para la primera imagen */
+    margin-right: 10px; /* Espacio entre la primera imagen y el título */
+}
+
+.icon-image2 {
+    height: 2rem; /* Estilo para la segunda imagen */
+    margin-left: 10px; /* Espacio entre el título y la segunda imagen */
+}
+
+.container {
+    max-width: 400px;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.container label,
+.container input {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container input[type="file"] {
+    margin-top: 5px;
+}
+
+.container button[type="button"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container button[type="button"]:hover {
+    background-color: #0056b3;
+}
+
+button{
+    display: block;
+    margin: 0 auto;
+}
+
+input[type="file"]{
+    display: none;
+}
+
+.camera-container, .video-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px; /* Ancho deseado */
+    height: 300px; /* Alto deseado */
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.camera-button, .camera-upload{
+    position: relative;
+    z-index: 2;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    top: 36%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.img-capture{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px; /* Ancho deseado */
+    height: 300px; /* Alto deseado */
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Estilos para dispositivos pequeños */
+@media (max-width: 600px) {
+    .container {
+        max-width: 90%;
+        padding: 15px;
+    }
+}

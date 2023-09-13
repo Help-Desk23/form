@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Paxor</title>
+    <link rel="short icon" href="../static/img/HERO-1.png">
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="../static/img/HERO-NEGRO-HORIZONTAL.png" alt="" class="icon-image">
+            <h1>FORMULARIO DE REGISTRO</h1>
+            <img src="../static/img/PAXOR-NEGRO.png" alt="" class="icon-image2">
+        </div>
+        <form method="post" enctype="multipart/form-data">
+            <label for="name"> Nombre </label>
+            <input type="text" id="name" name="name" required> <br>
+
+            <label for="ci"> CI </label>
+            <input type="text" id="ci" name="ci" required> <br>
+
+            <label for="phone"> Celular </label>
+            <input type="text" id="phone" name="phone" required> <br>
+
+            <label for="motos"> Escoge Tu Moto</label>
+            <select name="motos" id="motos">
+                <option value="eco100_deluxe">ECO 100 DELUXE</option>
+                <option value="eco150" selected>ECO 150</option>
+                <option value="hunk150">HUNK 150</option>
+                <option value="hunk160r">HUNK 160R</option>
+                <option value="xpulse200">XPULSE 200 ADVANCE</option>
+                <option value="xpulse200t">XPULSE 200T</option>
+            </select> <br>
+
+            <label for="direction"> Dirección </label>
+            <input type="text" id="direction" name="direction" readonly> <br>
+            <button type="button" id="botonUbicacion"> Agregar mi Ubicación </button> <br>
+
+            <label for="image"> Foto </label>
+            <input type="file" id="image" name="image" required>
+            <button type="button" id="botonFoto">Tomar Foto</button> <br>
+            
+            <button type="button" id="botonAgregar"> Agregar Registros</button>
+        </form>
+        <script type="module" src="/static/scripts.js"></script>
+    </div>
+</body>
+</html>
